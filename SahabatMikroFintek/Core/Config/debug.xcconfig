@@ -1,0 +1,11 @@
+//
+//  env.xcconfig
+//  SahabatMikroFintek
+//
+//  Created by Kevin Dallian on 23/06/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_URL=raw.githubusercontent.com/andreascandle/p2p_json_test/main

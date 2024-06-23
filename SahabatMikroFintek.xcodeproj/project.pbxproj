@@ -47,6 +47,8 @@
 		D8AEA98B2C28608A00205F90 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		D8AEA98D2C2863F700205F90 /* SortModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortModalView.swift; sourceTree = "<group>"; };
 		D8AEA9932C2864B700205F90 /* SortComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortComponent.swift; sourceTree = "<group>"; };
+		D8AEA9962C2870D600205F90 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		D8AEA9972C28717600205F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		D8AEA95A2C26C11B00205F90 /* SahabatMikroFintek */ = {
 			isa = PBXGroup;
 			children = (
+				D8AEA9972C28717600205F90 /* Info.plist */,
 				D8AEA95F2C26C11C00205F90 /* Assets.xcassets */,
 				D8AEA9692C26C15D00205F90 /* Core */,
 				D8AEA96A2C26C16000205F90 /* Presentation */,
@@ -99,6 +102,7 @@
 		D8AEA9692C26C15D00205F90 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D8AEA9952C2870B800205F90 /* Config */,
 				D8AEA98A2C28608200205F90 /* Utils */,
 				D8AEA9712C26C99200205F90 /* Model */,
 			);
@@ -197,6 +201,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		D8AEA9952C2870B800205F90 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA9962C2870D600205F90 /* debug.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +303,7 @@
 /* Begin XCBuildConfiguration section */
 		D8AEA9642C26C11C00205F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8AEA9962C2870D600205F90 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -354,6 +367,7 @@
 		};
 		D8AEA9652C26C11C00205F90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8AEA9962C2870D600205F90 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -419,6 +433,7 @@
 				DEVELOPMENT_TEAM = MH2BSYHQQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SahabatMikroFintek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +463,7 @@
 				DEVELOPMENT_TEAM = MH2BSYHQQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SahabatMikroFintek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

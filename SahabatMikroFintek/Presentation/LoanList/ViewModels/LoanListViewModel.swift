@@ -9,7 +9,6 @@ import Combine
 import Foundation
 
 class LoanListViewModel : ObservableObject {
-    let endpoint = "https://raw.githubusercontent.com/andreascandle/p2p_json_test/main/api/json/loans.json"
     @Published var loans : [Loan] = []
     @Published var isLoading : Bool = true
     @Published var searchText : String = ""
@@ -45,7 +44,11 @@ class LoanListViewModel : ObservableObject {
     }
     
     func fetchLoanData() async {
-        guard let url = URL(string: endpoint) else {
+        guard let apiURL = Bundle.main.infoDictionary?["API_URL"] as? String else {
+            return
+        }
+        
+        guard let url = URL(string: "https://\(apiURL)/api/json/loans.json") else {
             return
         }
         cancellable = URLSession.shared.dataTaskPublisher(for: url)

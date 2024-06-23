@@ -9,13 +9,15 @@ import Foundation
 
 class LoanDetailViewModel : ObservableObject {
     @Published var loan : Loan
-    let endpoint = "https://raw.githubusercontent.com/andreascandle/p2p_json_test/main"
     
     init(loan: Loan) {
         self.loan = loan
     }
     
     func generateLinkEndpoint(urlString: String) -> URL? {
-        return URL(string: "\(endpoint)\(urlString)") ?? nil
+        guard let apiURL = Bundle.main.infoDictionary?["API_URL"] as? String else {
+            return nil
+        }
+        return URL(string: "https://\(apiURL)\(urlString)") ?? nil
     }
 }
