@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct SortComponent: View {
+    var title : String
+    var checked : Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text(title)
+            if checked {
+                Image(systemName: "checkmark")
+                    .resizable()
+                    .frame(width: 15, height: 12)
+                    .foregroundStyle(.blue)
+            }
+        }
     }
 }
 
 #Preview {
-    SortComponent()
+    SortComponent(title: "Amount", checked: true)
 }
