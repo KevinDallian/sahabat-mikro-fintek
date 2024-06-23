@@ -21,9 +21,17 @@ iOS App Submission for PT. Sahabat Mikro Fintek
 **Framework:** Combine, SwiftUI
 
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your configuration file.
+
+`API_URL = {Endpoint Provided}`
+
+
 ## Installation
 
 - Clone Project using git
+- Add configuration file with corresponding environment variables
 - Run on Xcode
 
 
