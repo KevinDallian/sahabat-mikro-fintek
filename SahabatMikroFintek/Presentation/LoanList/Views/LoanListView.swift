@@ -47,7 +47,7 @@ struct LoanListView: View {
                                 Image(systemName: "line.3.horizontal.decrease.circle")
                             }
                             .popover(isPresented: $vm.showModal) {
-                                ModalView(vm: vm)
+                                SortModalView(vm: vm)
                                     .presentationCompactAdaptation(.popover)
                             }
                         }
@@ -55,35 +55,6 @@ struct LoanListView: View {
                 }
             }
         }
-    }
-}
-
-struct ModalView: View {
-    @ObservedObject var vm : LoanListViewModel
-    @Environment(\.dismiss) private var dismiss
-    var body: some View {
-        List{
-            Button {
-                vm.sortOption = .amount
-                dismiss()
-            } label: {
-                Text("Amount")
-            }
-            Button {
-                vm.sortOption = .term
-                dismiss()
-            } label: {
-                Text("Term")
-            }
-            Button {
-                vm.sortOption = .purpose
-                dismiss()
-            } label: {
-                Text("Purpose")
-            }
-        }
-        .frame(width: 150, height: 120)
-        .listStyle(.plain)
     }
 }
 

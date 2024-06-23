@@ -15,6 +15,7 @@ class LoanListViewModel : ObservableObject {
     @Published var searchText : String = ""
     @Published var showModal = false
     @Published var sortOption : SortOption = .amount
+    @Published var sortIsAscending : Bool = false
     
     enum SortOption : String {
         case amount = "Amount", term = "Term", purpose = "Purpose"
@@ -31,14 +32,16 @@ class LoanListViewModel : ObservableObject {
     }
     
     var sortResults : [Loan] {
+        let sortedResults : [Loan]
         switch sortOption {
         case .amount:
-            return searchResults.sorted{ $0.amount > $1.amount }
+            sortedResults = searchResults.sorted { sortIsAscending ? $0.amount < $1.amount : $0.amount > $1.amount }
         case .term:
-            return searchResults.sorted{ $0.term > $1.term }
+            sortedResults = searchResults.sorted { sortIsAscending ? $0.term < $1.term : $0.term > $1.term }
         case .purpose:
-            return searchResults.sorted{ $0.purpose > $1.purpose }
+            sortedResults = searchResults.sorted { sortIsAscending ? $0.purpose < $1.purpose : $0.purpose > $1.purpose }
         }
+        return sortedResults
     }
     
     func fetchLoanData() async {

@@ -21,8 +21,8 @@ struct LoanDetailView: View {
             Section("Repayment Schedule"){
                 ForEach(vm.loan.repaymentSchedule.installments, id: \.dueDate) { installment in
                     HStack {
-                        Text("\(installment.amountDue) at")
-                        Text("\(installment.dueDate)")
+                        Text(stringToDate(installment.dueDate).formatted(date: .abbreviated, time: .omitted))
+                        Text("\(installment.amountDue.formatted(.currency(code: "USD"))):")
                     }
                 }
             }
