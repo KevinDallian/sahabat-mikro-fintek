@@ -11,7 +11,7 @@ import SwiftUI
 struct SahabatMikroFintekApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoanListView()
         }
     }
 }

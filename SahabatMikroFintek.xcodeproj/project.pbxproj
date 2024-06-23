@@ -8,17 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		D8AEA95C2C26C11B00205F90 /* SahabatMikroFintekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA95B2C26C11B00205F90 /* SahabatMikroFintekApp.swift */; };
-		D8AEA95E2C26C11B00205F90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA95D2C26C11B00205F90 /* ContentView.swift */; };
 		D8AEA9602C26C11C00205F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AEA95F2C26C11C00205F90 /* Assets.xcassets */; };
 		D8AEA9632C26C11C00205F90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AEA9622C26C11C00205F90 /* Preview Assets.xcassets */; };
+		D8AEA96D2C26C1B200205F90 /* LoanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA96C2C26C1B200205F90 /* LoanListView.swift */; };
+		D8AEA96F2C26C1C900205F90 /* LoanListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA96E2C26C1C900205F90 /* LoanListViewModel.swift */; };
+		D8AEA9732C26C99F00205F90 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9722C26C99F00205F90 /* Loan.swift */; };
+		D8AEA9752C26C9ED00205F90 /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9742C26C9ED00205F90 /* Borrower.swift */; };
+		D8AEA9772C26CA4A00205F90 /* Collateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9762C26CA4A00205F90 /* Collateral.swift */; };
+		D8AEA9792C26CA8B00205F90 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9782C26CA8B00205F90 /* Document.swift */; };
+		D8AEA97B2C26CACC00205F90 /* RepaymentSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA97A2C26CACC00205F90 /* RepaymentSchedule.swift */; };
+		D8AEA97D2C26D18C00205F90 /* LoanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA97C2C26D18C00205F90 /* LoanResponse.swift */; };
+		D8AEA9802C26D62000205F90 /* ListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA97F2C26D62000205F90 /* ListComponent.swift */; };
+		D8AEA9822C2708C100205F90 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9812C2708C100205F90 /* LoadingView.swift */; };
+		D8AEA9852C270B7900205F90 /* LoanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9842C270B7900205F90 /* LoanDetailView.swift */; };
+		D8AEA9872C270B8500205F90 /* LoanDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9862C270B8500205F90 /* LoanDetailViewModel.swift */; };
+		D8AEA9892C28022F00205F90 /* DocumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEA9882C28022F00205F90 /* DocumentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8AEA9582C26C11B00205F90 /* SahabatMikroFintek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SahabatMikroFintek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AEA95B2C26C11B00205F90 /* SahabatMikroFintekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SahabatMikroFintekApp.swift; sourceTree = "<group>"; };
-		D8AEA95D2C26C11B00205F90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8AEA95F2C26C11C00205F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8AEA9622C26C11C00205F90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8AEA96C2C26C1B200205F90 /* LoanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanListView.swift; sourceTree = "<group>"; };
+		D8AEA96E2C26C1C900205F90 /* LoanListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanListViewModel.swift; sourceTree = "<group>"; };
+		D8AEA9722C26C99F00205F90 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		D8AEA9742C26C9ED00205F90 /* Borrower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
+		D8AEA9762C26CA4A00205F90 /* Collateral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collateral.swift; sourceTree = "<group>"; };
+		D8AEA9782C26CA8B00205F90 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		D8AEA97A2C26CACC00205F90 /* RepaymentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSchedule.swift; sourceTree = "<group>"; };
+		D8AEA97C2C26D18C00205F90 /* LoanResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanResponse.swift; sourceTree = "<group>"; };
+		D8AEA97F2C26D62000205F90 /* ListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponent.swift; sourceTree = "<group>"; };
+		D8AEA9812C2708C100205F90 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D8AEA9842C270B7900205F90 /* LoanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailView.swift; sourceTree = "<group>"; };
+		D8AEA9862C270B8500205F90 /* LoanDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailViewModel.swift; sourceTree = "<group>"; };
+		D8AEA9882C28022F00205F90 /* DocumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +75,11 @@
 		D8AEA95A2C26C11B00205F90 /* SahabatMikroFintek */ = {
 			isa = PBXGroup;
 			children = (
-				D8AEA95B2C26C11B00205F90 /* SahabatMikroFintekApp.swift */,
-				D8AEA95D2C26C11B00205F90 /* ContentView.swift */,
 				D8AEA95F2C26C11C00205F90 /* Assets.xcassets */,
+				D8AEA9692C26C15D00205F90 /* Core */,
+				D8AEA96A2C26C16000205F90 /* Presentation */,
 				D8AEA9612C26C11C00205F90 /* Preview Content */,
+				D8AEA95B2C26C11B00205F90 /* SahabatMikroFintekApp.swift */,
 			);
 			path = SahabatMikroFintek;
 			sourceTree = "<group>";
@@ -65,6 +90,65 @@
 				D8AEA9622C26C11C00205F90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8AEA9692C26C15D00205F90 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA9712C26C99200205F90 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D8AEA96A2C26C16000205F90 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA9832C270B6F00205F90 /* LoanDetail */,
+				D8AEA97E2C26D61500205F90 /* Components */,
+				D8AEA96B2C26C1A100205F90 /* LoanList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D8AEA96B2C26C1A100205F90 /* LoanList */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA96C2C26C1B200205F90 /* LoanListView.swift */,
+				D8AEA96E2C26C1C900205F90 /* LoanListViewModel.swift */,
+			);
+			path = LoanList;
+			sourceTree = "<group>";
+		};
+		D8AEA9712C26C99200205F90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA9722C26C99F00205F90 /* Loan.swift */,
+				D8AEA9742C26C9ED00205F90 /* Borrower.swift */,
+				D8AEA9762C26CA4A00205F90 /* Collateral.swift */,
+				D8AEA9782C26CA8B00205F90 /* Document.swift */,
+				D8AEA97A2C26CACC00205F90 /* RepaymentSchedule.swift */,
+				D8AEA97C2C26D18C00205F90 /* LoanResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8AEA97E2C26D61500205F90 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA97F2C26D62000205F90 /* ListComponent.swift */,
+				D8AEA9812C2708C100205F90 /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D8AEA9832C270B6F00205F90 /* LoanDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D8AEA9842C270B7900205F90 /* LoanDetailView.swift */,
+				D8AEA9862C270B8500205F90 /* LoanDetailViewModel.swift */,
+				D8AEA9882C28022F00205F90 /* DocumentDetailView.swift */,
+			);
+			path = LoanDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +221,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AEA95E2C26C11B00205F90 /* ContentView.swift in Sources */,
+				D8AEA9752C26C9ED00205F90 /* Borrower.swift in Sources */,
+				D8AEA97D2C26D18C00205F90 /* LoanResponse.swift in Sources */,
+				D8AEA96D2C26C1B200205F90 /* LoanListView.swift in Sources */,
+				D8AEA9852C270B7900205F90 /* LoanDetailView.swift in Sources */,
+				D8AEA9892C28022F00205F90 /* DocumentDetailView.swift in Sources */,
+				D8AEA9822C2708C100205F90 /* LoadingView.swift in Sources */,
+				D8AEA9802C26D62000205F90 /* ListComponent.swift in Sources */,
 				D8AEA95C2C26C11B00205F90 /* SahabatMikroFintekApp.swift in Sources */,
+				D8AEA96F2C26C1C900205F90 /* LoanListViewModel.swift in Sources */,
+				D8AEA97B2C26CACC00205F90 /* RepaymentSchedule.swift in Sources */,
+				D8AEA9772C26CA4A00205F90 /* Collateral.swift in Sources */,
+				D8AEA9792C26CA8B00205F90 /* Document.swift in Sources */,
+				D8AEA9872C270B8500205F90 /* LoanDetailViewModel.swift in Sources */,
+				D8AEA9732C26C99F00205F90 /* Loan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
